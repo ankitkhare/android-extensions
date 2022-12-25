@@ -20,5 +20,5 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.ankitkhare:android-extensions:v1.1'
+	        implementation 'com.github.ankitkhare:android-extensions:v1.2'
 	}
