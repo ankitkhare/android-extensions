@@ -1,3 +1,5 @@
+[![Release](https://jitpack.io/v/ankitkhare/android-extensions.svg)](https://jitpack.io/#ankitkhare/android-extensions)
+
 # android-extensions
 Library for Common Extension functions in Android
 
