@@ -1,12 +1,28 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 group='com.github.ankitkhare'
 
 android {
+    namespace = 'com.github.ankitkhare'
     compileSdk 32
+    defaultConfig {
+        aarMetadata {
+            minCompileSdk = 21
+        }
+    }
+    testFixtures {
+        enable = true
+    }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+        }
+    }
 
     defaultConfig {
         minSdk 21
@@ -28,6 +44,20 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.ankitkhare'
+            artifactId = 'android-extensions'
+            version = '1.2'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
     }
 }
 
