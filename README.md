@@ -1,3 +1,5 @@
+[![Release](https://jitpack.io/v/ankitkhare/android-extensions.svg)](https://jitpack.io/#ankitkhare/android-extensions)
+
 # android-extensions
 Library for Common Extension functions in Android
 
@@ -20,5 +22,5 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.ankitkhare:android-extensions:v1.1'
+	        implementation 'com.github.ankitkhare:android-extensions:v1.2'
 	}
