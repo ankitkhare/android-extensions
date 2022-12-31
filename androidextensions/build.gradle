@@ -6,6 +6,7 @@ plugins {
 
 android {
     namespace = 'com.github.ankitkhare'
+    compileSdk 32
     defaultConfig {
         aarMetadata {
             minCompileSdk = 21
